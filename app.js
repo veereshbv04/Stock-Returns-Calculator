@@ -7,8 +7,17 @@ const checkButton = document.querySelector("#check");
 const outputDiv = document.querySelector(".output");
 
 checkButton.addEventListener("click",()=>{
-    console.log("ss");
-    console.log(purchasePrice.value);
-    console.log(stockQuantity.value);
-    console.log(currentPrice.value);
+    console.log("Check Button is Clicked");
+    
+    const purchasePriceNum = Number(purchasePrice.value);
+    const stockQuantityNum = Number(stockQuantity.value);
+    const currentPriceNum = Number(currentPrice.value);
+
+    console.log(purchasePriceNum);
+    console.log(stockQuantityNum);
+    console.log(currentPriceNum);
+
+    if (currentPriceNum > purchasePriceNum){
+        
+    }
 })
