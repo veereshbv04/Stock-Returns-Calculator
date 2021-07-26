@@ -18,6 +18,10 @@ checkButton.addEventListener("click",()=>{
     console.log(currentPriceNum);
 
     if (currentPriceNum > purchasePriceNum){
-        
+        // Profit
+        const profit = (currentPriceNum - purchasePriceNum)*stockQuantityNum;
+        const profitPercent = ((currentPriceNum - purchasePriceNum)*100/purchasePriceNum);
+        console.log(profit);
+        console.log(profitPercent);
     }
 })
