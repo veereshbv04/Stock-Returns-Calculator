@@ -9,7 +9,9 @@ body{
     font-family:"Zen Loop",cursive;
     margin: 0rem;
     /* background-image: image(); */
-    background-image: url(/images/main_background_img.svg);
+    background-image: url(/images/main_background_img.png);
+    background-repeat:space;
+ 
     
 }
 
@@ -45,13 +47,15 @@ img{
     /* width: 100%; */
     height: auto;
     background-color: rgb(46, 143, 235);
-    border-radius: 2rem;
-    border-style:ridge;
+    border-top-right-radius: 7rem;
+    border-bottom-left-radius: 7rem;
+    border-style:solid;
     border-width: 1rem;
     border-color: var(--primary-backgroundcolor);
     font-size: 1rem;
     font-style: italic;
     padding: 1rem;
+
  
 }
 
