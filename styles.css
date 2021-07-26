@@ -60,6 +60,13 @@ img{
 
  
 }
+.result-div{
+    text-align: center;
+    padding: 1rem;
+    margin: auto;
+    font
+}
+
 
 @media (max-width:460px){
     .main-div{
