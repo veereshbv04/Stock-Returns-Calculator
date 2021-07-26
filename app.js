@@ -13,7 +13,8 @@ const outputDiv = document.querySelector(".output");
 
 
 
-checkButton.addEventListener("click",()=>{
+checkButton.addEventListener("click",(e)=>{
+    e.preventDefault();
     console.log("Check Button is Clicked");
     
     const purchasePriceNum = Number(purchasePrice.value);
@@ -43,8 +44,8 @@ checkButton.addEventListener("click",()=>{
         const lossPercentage = ((purchasePriceNum - currentPriceNum)*100/purchasePriceNum);
         console.log(loss);
         console.log(lossPercentage);
-        outputDiv.innerHTML=`<div class="result-div" style="width:100%"><h1>Ohh you have a Loss of ${loss} and that is rupees ${lossPercentage}</h1></div>`;
-        document.body.style.backgroundColor="green";
+        outputDiv.innerHTML=`<div class="result-div" style="width:100%"><h1>Ohh you have a Loss of ${lossPercentage}% and that is rupees ${loss}</h1></div>`;
+       
 
         if(lossPercentage>50){
             document.body.style.backgroundColor="orange";
