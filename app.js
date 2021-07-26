@@ -32,13 +32,23 @@ checkButton.addEventListener("click",()=>{
         const profitPercent = ((currentPriceNum - purchasePriceNum)*100/purchasePriceNum);
         console.log(profit);
         console.log(profitPercent);
-        outputDiv.innerHTML=`<div class="result-div" style="width:100%"><h1>Profit ${profit}</h1></div>`;
+        outputDiv.innerHTML=`<div class="result-div" style="width:100%"><h1>Your Profit is ${profitPercent}% and that is rupees ${profit}</h1></div>`;
+    
+        if (profitPercent>50){
+            document.body.style.backgroundColor="green";
+        }
+
     }else{
         const loss = (purchasePriceNum - currentPriceNum)*stockQuantityNum;
         const lossPercentage = ((purchasePriceNum - currentPriceNum)*100/purchasePriceNum);
         console.log(loss);
         console.log(lossPercentage);
-        outputDiv.innerHTML=`<div class="result-div" style="width:100%"><h1>Loss ${loss}</h1></div>`;
+        outputDiv.innerHTML=`<div class="result-div" style="width:100%"><h1>Ohh you have a Loss of ${loss} and that is rupees ${lossPercentage}</h1></div>`;
+        document.body.style.backgroundColor="green";
+
+        if(lossPercentage>50){
+            document.body.style.backgroundColor="orange";
+        }
     }
 })
 
