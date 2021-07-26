@@ -26,7 +26,7 @@ checkButton.addEventListener("click",(e)=>{
     console.log(currentPriceNum);
 
     if (purchasePriceNum==0 || currentPriceNum==0){
-        alert("Enter Valid Inputs");
+        alert("Enter Valid Input");
         return
     }
    
@@ -39,7 +39,8 @@ checkButton.addEventListener("click",(e)=>{
         const profitPercent = ((currentPriceNum - purchasePriceNum)*100/purchasePriceNum);
         console.log(profit);
         console.log(profitPercent);
-        outputDiv.innerHTML=`<div class="result-div" style="width:100%><h1>Your Profit is ${profitPercent}% and that is rupees ${profit}</h1></div>`;
+        
+        outputDiv.innerHTML=`<div class="result-div" style="width:100%"><h1>Your Profit is ${profitPercent}% and that is rupees ${profit}</h1></div>`;
     
         if (profitPercent>50){
             document.body.style.backgroundColor="green";

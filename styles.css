@@ -27,9 +27,8 @@ img{
    position: fixed;
    top: 0;
    left: 0;
-   z-index: -1;
-   
-} */
+   z-index: -1; 
+}  */
 
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
     img.bg {
@@ -66,7 +65,7 @@ img{
     padding: 1rem;
     margin: auto;
     font-family: monospace;
-    color: rgb(114, 34, 189);
+    color: rgba(250, 234, 209, 0.952);
     
 }
 
