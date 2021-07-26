@@ -6,6 +6,10 @@ const checkButton = document.querySelector("#check");
 
 const outputDiv = document.querySelector(".output");
 
+
+const outputProfit = '<div style="width:100%">Profit</div>'
+const outputLoss = '<div style="width:100%">Loss</div>'
+
 checkButton.addEventListener("click",()=>{
     console.log("Check Button is Clicked");
     
@@ -23,10 +27,12 @@ checkButton.addEventListener("click",()=>{
         const profitPercent = ((currentPriceNum - purchasePriceNum)*100/purchasePriceNum);
         console.log(profit);
         console.log(profitPercent);
+        outputDiv.innerHTML=outputProfit;
     }else{
         const loss = (purchasePriceNum - currentPriceNum)*stockQuantityNum;
         const lossPercentage = ((purchasePriceNum - currentPriceNum)*100/purchasePriceNum);
         console.log(loss);
         console.log(lossPercentage);
+        outputDiv.innerHTML=outputLoss;
     }
 })
