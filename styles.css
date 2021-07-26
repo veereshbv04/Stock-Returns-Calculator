@@ -10,8 +10,7 @@ body{
     margin: 0rem;
     /* background-image: image(); */
     background-image: url(/images/main_background_img.png);
-    background-repeat:space;
- 
+    /* background-repeat:space; */
     
 }
 
@@ -39,20 +38,22 @@ img{
 }
 
 .main-div{
-    color: aliceblue;
+    color: var(--primary-backgroundcolor);
     margin: auto;
     /* margin-top: 10%; */
     /* margin-left: 20%; */
-    max-width:40% ;
+    
+    max-width:30% ;
     /* width: 100%; */
     height: auto;
-    background-color: rgb(46, 143, 235);
+    background-color: rgba(0, 101, 196, 0.158);
     border-top-right-radius: 7rem;
     border-bottom-left-radius: 7rem;
     border-style:solid;
     border-width: 1rem;
     border-color: var(--primary-backgroundcolor);
-    font-size: 1rem;
+    font-size: 25px;
+  
     font-style: italic;
     padding: 1rem;
 
@@ -74,8 +75,9 @@ h2{
 } */
 .stockdiv{
     margin: auto;
-    background-color: rgb(46, 143, 235);
-    text-align: center;   
+    background-color: rgba(0, 101, 196, 0.61);
+    text-align: center;
+    width: fit-content;   
 }
 /* .stpckquantity{
     margin: auto;
