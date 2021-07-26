@@ -23,5 +23,10 @@ checkButton.addEventListener("click",()=>{
         const profitPercent = ((currentPriceNum - purchasePriceNum)*100/purchasePriceNum);
         console.log(profit);
         console.log(profitPercent);
+    }else{
+        const loss = (purchasePriceNum - currentPriceNum)*stockQuantityNum;
+        const lossPercentage = ((purchasePriceNum - currentPriceNum)*100/purchasePriceNum);
+        console.log(loss);
+        console.log(lossPercentage);
     }
 })
