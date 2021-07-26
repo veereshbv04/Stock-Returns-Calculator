@@ -123,4 +123,10 @@ button{
 }
 #github a{
     text-decoration: none;
+    color: rgb(112, 83, 39);
+}
+
+footer a{
+    color: rgb(69, 40, 236);
+    text-decoration: none;
 }

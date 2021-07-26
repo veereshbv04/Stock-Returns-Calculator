@@ -26,7 +26,7 @@ checkButton.addEventListener("click",(e)=>{
     console.log(currentPriceNum);
 
     if (purchasePriceNum==0 || currentPriceNum==0){
-        alert("gg");
+        alert("Enter Valid Inputs");
         return
     }
    
