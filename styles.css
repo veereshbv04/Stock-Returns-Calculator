@@ -125,6 +125,11 @@ button{
     color: rgb(112, 83, 39);
 }
 
+
+.output{
+    color: blue;
+}
+
 footer a{
     color: rgb(69, 40, 236);
     text-decoration: none;
